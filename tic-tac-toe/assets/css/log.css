@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap);
+
+
+*{
+	font-family: 'Tilt Neon', sans-serif;
+	margin: 0;
+	padding: 0;
+	
+}
+
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	background: url(../img/back-image.png);
+}
+
+.contenedor{
+	position: relative;
+	width: 400px;
+	border: 2px solid rgba(255, 255, 255, .6);
+	border-radius: 20px;
+	backdrop-filter: blur(30px);
+	height: 530px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: auto;
+}
+
+.contenedor h2{
+	font-size: 2.3rem;
+	color: #fff;
+	text-align: center;
+}
+
+.input-contenedor{
+	position: relative;
+	margin: 30px 0;
+	width: 300px;
+	border-bottom: 2px solid #fff;
+}
+
+.input-contenedor label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1rem;
+	pointer-events: none;
+	transition: .6s;
+	font-weight: bold;
+
+}
+
+input:focus ~ label,
+input:valid ~ label{
+	top: -5px;
+
+}
+
+.input-contenedor input{
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	padding: - 35px 0 5px;
+	color: #fff;
+	
+}
+
+.input-contenedor i{
+	position: absolute;
+	color: #fff;
+	font-size: 1.6rem;
+	top: 19px;
+	right: 8px;
+
+}
+
+.olvidar{
+	margin: -15px 0 15px;
+	font-size: .9em;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+
+}
+
+.olvidar label input{
+	margin: 3px;
+	
+
+}
+
+.olvidar label a{
+	color: #fff;
+	text-decoration: none;
+	transition: .3s;
+	font-size: .9em;
+
+}
+
+.olvidar label a:hover{
+	text-decoration: underline;
+
+}
+
+.formulario button{
+	width: 100%;
+	height: 45px;
+	border-radius: 40px;
+	background: #fff;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	transition: 4s;
+	
+}
+
+.formulario button:hover{
+	opacity: .10;
+
+}
+
+.registrar{
+	font-size: .8rem;
+	color: #fff;
+	text-align: center;
+	margin: 20px 0 10px;
+
+}
+
+.registrar a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: .3s;
+	
+
+}
+
+.registrar a:hover{
+	text-decoration: underline;
+
+}
+
+.mensaje {
+	margin-top: 10px;
+	height: 30px;
+}
+
+.cont-stats {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 10px;
+	padding: 0 20px;
+	height: 300px;
+}
+
+.op-game {
+	grid-column: 1 / 3;
+	/* align-self: self-start; */
+}
+.op-game .game {
+	width: 100%;
+	position: relative;
+	z-index: 10;
+}
+
+.op-game .opt {
+	width: 40%;
+	transform: translateY(-46px);
+	transition: .5s all;
+	position: relative;
+}
+
+.contenedor.d-stats,
+.contenedor.d-history {
+	display: flex;
+	flex-direction: column;
+}
+
+.contenedor.d-history {
+	width: 500px;
+	max-height: 400px;
+}
+.contenedor.d-stats {
+	height: 250px;
+}
+
+
